@@ -27,6 +27,14 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import "../plugins/base"
+import "../plugins/index"
+import "../plugins/jquery.custom"
+import "../plugins/jquery"
+import "../plugins/jquery.mousewheel"
+import "../plugins/modernizr.custom"
+import "../plugins/parallax"
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
