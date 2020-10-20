@@ -28,7 +28,7 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import "../plugins/base"
-import "../plugins/index"
+// import "../plugins/index"
 import "../plugins/jquery.custom"
 import "../plugins/jquery"
 import "../plugins/portfolio"
