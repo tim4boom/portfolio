@@ -31,7 +31,7 @@ import "../plugins/base"
 import "../plugins/index"
 import "../plugins/jquery.custom"
 import "../plugins/jquery"
-import "../plugins/jquery.mousewheel"
+// import "../plugins/jquery.mousewheel"
 import "../plugins/parallax"
 
 
