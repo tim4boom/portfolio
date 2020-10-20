@@ -1,0 +1,152 @@
+.Footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 77px;
+    color: #ffffff;
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    text-align: center
+}
+
+@media (max-width: 600px) {
+    .Footer {
+        height: 213px;
+        padding-bottom: 30px;
+        background: #151515;
+    }
+
+    .index-page .Footer {
+        left: 10%;
+        width: auto;
+        background: transparent
+    }
+}
+
+.index-page .Footer {
+    position: fixed;
+    bottom: -1px
+}
+
+.portfolio-work .Footer {
+    display: none
+}
+
+.text-page .Footer {
+    background: #151515
+}
+
+.Footer-menu {
+    list-style-type: none;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    text-align: justify
+}
+
+@media (max-width: 600px) {
+    .Footer-menu {
+        margin-left: 10%;
+        min-width: 0;
+        width: 155px;
+        max-width: 700px;
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    .index-page .Footer-menu {
+        margin-left: 0
+    }
+}
+
+.Footer-menu:after {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    content: ""
+}
+
+.Footer-menu>li {
+    display: inline-block;
+    vertical-align: middle
+}
+
+@media (max-width: 600px) {
+    .Footer-menu>li {
+        display: block;
+        text-align: left;
+        min-width: 156px;
+    }
+}
+
+.Footer-menu>li:first-child {
+    height: 100%;
+    padding-left: 7.7%
+}
+
+@media (max-width: 600px) {
+    .Footer-menu>li:first-child {
+        height: auto;
+        padding-left: 0;
+    }
+}
+
+.Footer-menu>li.last {
+    padding-right: 7.7%
+}
+
+.Footer .link-st {
+    margin-top: .23em;
+    margin-bottom: .23em;
+    font: 18px 'PT Sans', Tahoma, sans-serif;
+    color: white
+}
+
+@media (max-width: 600px) {
+    .Footer-logoWr {
+        padding-left: 0%;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+}
+
+.index-page .Footer-logoWr {
+    display: none
+}
+
+.Footer-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 23px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    background-color: #dc3333;
+    border: medium none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    -o-transition: -o-transform .5s;
+    transition: transform .5s
+}
+
+.Footer-logo:after {
+    content: none
+}
+
+.Footer-logo:hover {
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2)
+}
