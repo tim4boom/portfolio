@@ -1,3 +1,4 @@
+console.log("parallax")
 /*
  * Зависит от jquery, jquery.mousewheel и jquery.custom.
  *

@@ -1,3 +1,5 @@
+console.log("index")
+
 ! function e(t, i, r) {
   function n(o, a) {
     if (!i[o]) {
