@@ -1,0 +1,52 @@
+.loadBackground,
+.Preloader {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    z-index: 2;
+    height: 100%;
+    width: 100%
+}
+
+.loadBackground {
+    z-index: 1;
+    background-color: #000000;
+    display: block
+}
+
+.Preloader {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.Preloader:after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: ''
+}
+
+.Preload-end,
+.Preload-start {
+    top: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0
+}
+
+.Preload-endImg,
+.Preload-startImg {
+    width: 200px;
+    height: 51px
+}
+
+.Preload-startImg {
+    float: right
+}
+
+.Preload-endImg {
+    float: left
+}

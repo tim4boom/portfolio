@@ -12,7 +12,11 @@ console.log("index")
   for (var s = "function" == typeof require && require, o = 0; o < r.length; o++) n(r[o]);
   return n
 }({
+
+
   1: [function(e) { e("../libs/jquery.mousewheel.js"), e("../libs/jquery.custom.js"), e("../util/customEventEngine.js"), e("../layout/parallax.js"), e("../layout/resizeables.js"), e("../ui/preloader.js"), e("../pages/index.js"), e("../pages/indexNav.js") }, { "../layout/parallax.js": 2, "../layout/resizeables.js": 3, "../libs/jquery.custom.js": 4, "../libs/jquery.mousewheel.js": 5, "../pages/index.js": 6, "../pages/indexNav.js": 7, "../ui/preloader.js": 8, "../util/customEventEngine.js": 9 }],
+
+
   2: [function() {
     window.parallax = function(e) {
       function t(e, t) {
@@ -179,6 +183,8 @@ console.log("index")
       }
     }
   }, {}],
+
+
   3: [function() {
     window.resizeables = { engineCreator: void 0, engine: void 0, initFromDescript: function(e) { resizeables.engine.getContainersFromDescript(e) }, init: function() { resizeables.engine.findContainers() }, adjust: function() { resizeables.engine.adjust() }, fillModes: { FILL_PARENT: "fillParent", FIT_PARENT: "fitParent", FIT_PARENT_WIDTH: "fitParentWidth" }, orientations: { LANDSCAPE: "landscape", PORTRAIT: "portrait" }, criticalReadabilityClass: "criticalReadability", minimalReadableFontSize: 11, baseFontSize: 14 }, resizeables.reference = { w: 1280, h: 923 }, resizeables.engineCreator = function() {
       function e(e, i) { return new t({ $src: e, fitting: i }) }
@@ -239,6 +245,8 @@ console.log("index")
       $("body").css("font-size", Math.min(8.4, t * Math.min(e.w, e.h)) + "px")
     }
   }, {}],
+
+
   4: [function() {
     jQuery.effects || function(e, t) {
       var i = e.uiBackCompat !== !1,
@@ -532,6 +540,8 @@ console.log("index")
         }()
     }(jQuery)
   }, {}],
+
+
   5: [function() {
     /*! Copyright (c) 2011 Brandon Aaron (http://brandonaaron.net)
      * Licensed under the MIT License (LICENSE.txt).
@@ -570,6 +580,8 @@ console.log("index")
       }, e.fn.extend({ mousewheel: function(e) { return e ? this.bind("mousewheel", e) : this.trigger("mousewheel") }, unmousewheel: function(e) { return this.unbind("mousewheel", e) } })
     }(jQuery)
   }, {}],
+
+
   6: [function() {
     function e() {
       function e() { Modernizr.history && $("a").on("click", function() { var e = $(this).attr("href"); "" != e && "#" != e && window.history.pushState({ mediaIsLoaded: "true" }, "mediaIsLoaded") }), tdLib.debLog("in preloader.onLoad"), resizeables.initFromDescript(o), r(), parallax && para.init(), t(), $("#parallax").trigger("preloadFinish") } Modernizr.history && window.history.state && window.history.state.mediaIsLoaded && (tdLib.debLog("Already visted. No preloader"), hotdot.preloaderEnabled = !1), u = $("#intro"), a = $("#footer"), tdLib.debLog("mainPageInit"), debugging = self.location.toString().indexOf("xe") > -1;
@@ -627,6 +639,8 @@ console.log("index")
     };
     $(window).on("hashchange", function(e) { return e.preventDefault(), f.doNotApplyHashFromAddressLine ? void(f.doNotApplyHashFromAddressLine = !1) : (f.applyHashFromAddressLine(), !1) }), $(e)
   }, {}],
+
+
   7: [function() {
     window.onload = function() {
       function e() { try { return document.createEvent("TouchEvent"), !0 } catch (e) { return !1 } }
@@ -640,6 +654,8 @@ console.log("index")
       setTimeout(function() { customEventEngine.bind(para, "finishedMove", function() { t(2e3) }), customEventEngine.bind(para, "startedMove", function() { clearTimeout(i), $(".left-arrow, .right-arrow, .nav-animation").css("display", "none") }), t(5e3), $(".left-arrow").click(para.closerLeft), $(".right-arrow").click(para.closerRight) }, 2e3), $(".left-arrow, .right-arrow, .nav-animation").addClass(e() ? "touch" : "no-touch")
     }
   }, {}],
+
+// PRELOADER
   8: [function() {
     window.preloader = { disable: void 0, start: void 0, onLoad: function() {}, $slide: void 0, visuals: void 0, fillVisuals: function() {}, fillingTime: 1400, delayBeforeLoadCheck: 0, targetLogoWidth: 0 };
     var e = "loadBackground";
@@ -664,5 +680,7 @@ console.log("index")
       preloader.visuals.loaded.find("img").add(preloader.visuals.unloaded.find("img")).add(preloader.visuals.unloaded).css("width", preloader.targetLogoWidth), s.add(preloader.visuals.loaded.find("img")).add(preloader.visuals.unloaded.find("img")).css("height", preloader.targetLogoWidth / o), setTimeout(t, preloader.delayBeforeLoadCheck)
     }
   }, {}],
+
+
   9: [function() {! function(e) { e.customEventEngine = { init: function(e, t) { e.cUE || (e.cUE = {}), e.cUE[t] || (e.cUE[t] = []) }, call: function(t, i, r) { t.cUE && t.cUE[i] || e.customEventEngine.init(t, i); for (var n in t.cUE[i]) t.cUE[i][n](r) }, bind: function(t, i, r) { t.cUE && t.cUE[i] || e.customEventEngine.init(t, i), t.cUE[i].push(r) } } }(window) }, {}]
 }, {}, [1]);
