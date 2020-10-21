@@ -1,4 +1,4 @@
-console.log("index")
+console.log("home")
 
 ! function e(t, i, r) {
   function n(o, a) {
